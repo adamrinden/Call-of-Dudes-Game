@@ -1,6 +1,6 @@
 # Call of Dudes
 ## Group Members and Roles
-* **Nolan Lee:** Art, UI
+* **Nolan Lee:** Art, UI/UX
 * **Sean Pitman:** TBD
 * **Adam Rinden:** 3D Assets, Level Design
 * **Shaun Romero:** TBD
@@ -25,7 +25,7 @@
 #### Audio:
 * **Music:** Energetic and engaging
 * **Sound Effects:** 
-	* Gun/shooting sound
+	* Gun/shooting/reloading sound
 	* Footsteps sound
 	* Hit sound
 	* Death sound
