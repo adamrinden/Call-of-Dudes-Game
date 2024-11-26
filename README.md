@@ -37,12 +37,12 @@
 2. **Instructions Screen:** Brief tutorial on controls and gameplay.
 3. **Match Setup:** Choose team and game mode
 	* Target Practice
-	* Single-Player mode (Player vs AI’s)
-4. **Gameplay Loop:** Player controls character to move and shoot, while trying to survive and have the most points.
-5. **End of Match:** Display stats (kills, assists, bullets shot), and option to replay or return to the main menu.
+	* Single-player mode (Player vs AI’s)
+4. **Gameplay Loop:** The Player controls the character to move and shoot while trying to survive and have the most points.
+5. **End of Match:** Display stats (kills, assists, bullets shot), and the option to replay or return to the main menu.
 
 ### Challenges:
 * **AI Behavior:** Developing a competitive yet fair AI for single-player mode.
-* **Balancing Mechanics:** Ensuring smooth gameplay with intuitive controls while maintaining a challenge
+* **Balancing Mechanics:** Ensuring smooth gameplay with intuitive controls while maintaining a challenge.
 * **Animation:** Creating fluid animations for player movements and interactions.
 
