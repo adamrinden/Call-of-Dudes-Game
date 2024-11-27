@@ -3,7 +3,7 @@
 * **Nolan Lee:** Art, UI/UX
 * **Sean Pitman:** TBD
 * **Adam Rinden:** 3D Assets, Level Design
-* **Shaun Romero:** TBD
+* **Shaun Romero:** Player Design/Programming
 * **Mark Sotelo:** Gameplay Programming
 ## Description
 ### Overview:
