@@ -46,3 +46,7 @@
 * **Balancing Mechanics:** Ensuring smooth gameplay with intuitive controls while maintaining a challenge.
 * **Animation:** Creating fluid animations for player movements and interactions.
 
+## In-progress Gameplay
+[![Video Title](https://img.youtube.com/vi/uDlJvCfBZpY/0.jpg)](https://www.youtube.com/watch?v=uDlJvCfBZpY)
+
+
