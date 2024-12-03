@@ -1,7 +1,7 @@
 # Call of Dudes
 ## Group Members and Roles
 * **Nolan Lee:** Art, UI/UX
-* **Sean Pitman:** TBD
+* **Sean Pitman:** Gameplay Programming, Level Design
 * **Adam Rinden:** 3D Assets, Level Design
 * **Shaun Romero:** Player Design/Programming
 * **Mark Sotelo:** Gameplay Programming
