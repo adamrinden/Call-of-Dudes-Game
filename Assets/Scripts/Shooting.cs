@@ -18,18 +18,24 @@ public class Shooting : MonoBehaviour
 
     private void Update() {
         if(timer > 0 ) {
-            timer -= Time.deltaTime / fireRate;
+            timer -= Time.deltaTime;
         }
 
         if (isAuto){
             if(Input.GetButton("Fire1") && timer <=0) {
+                fireRate = 0.1f;
                 Shoot();
             }
         }
         else {
             if(Input.GetButtonDown("Fire1") && timer <=0 ) {
+                fireRate = 0.5f;
                 Shoot();
             }
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isAuto = !isAuto;
         }
     }
 
@@ -38,6 +44,6 @@ public class Shooting : MonoBehaviour
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawnTransform.forward * bulletSpeed, ForceMode.Impulse);
         bullet.GetComponent<BulletController>().damage = bulletDamage;
 
-        timer = 1;
+        timer = fireRate;
     }
 }
