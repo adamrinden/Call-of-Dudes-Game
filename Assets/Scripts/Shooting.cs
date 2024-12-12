@@ -23,7 +23,7 @@ public class Shooting : MonoBehaviour
 
         if (isAuto){
             if(Input.GetButton("Fire1") && timer <=0) {
-                fireRate = 0.1f;
+                fireRate = fireRate;
                 Shoot();
             }
         }
