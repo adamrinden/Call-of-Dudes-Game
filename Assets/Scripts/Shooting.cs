@@ -8,7 +8,6 @@ public class Shooting : MonoBehaviour
    [Header("Bullet Variables")]
    public float bulletSpeed;
     public float fireRate, bulletDamage;
-   public bool isAuto;
 
    [Header("Initial Setup")]
    public Transform bulletSpawnTransform;
@@ -16,27 +15,20 @@ public class Shooting : MonoBehaviour
 
     private float timer;
 
+    public AudioSource source;
+    public AudioClip clip;
+
     private void Update() {
         if(timer > 0 ) {
             timer -= Time.deltaTime;
         }
 
-        if (isAuto){
-            if(Input.GetButton("Fire1") && timer <=0) {
-                fireRate = fireRate;
-                Shoot();
-            }
+        if(Input.GetButton("Fire1") && timer <= 0) {
+
+            Shoot();
         }
-        else {
-            if(Input.GetButtonDown("Fire1") && timer <=0 ) {
-                fireRate = 0.5f;
-                Shoot();
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            isAuto = !isAuto;
-        }
+
+       
     }
 
     void Shoot() {
@@ -44,6 +36,7 @@ public class Shooting : MonoBehaviour
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawnTransform.forward * bulletSpeed, ForceMode.Impulse);
         bullet.GetComponent<BulletController>().damage = bulletDamage;
 
+        source.PlayOneShot(clip);
         timer = fireRate;
     }
 }
