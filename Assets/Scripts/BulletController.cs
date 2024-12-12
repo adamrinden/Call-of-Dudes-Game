@@ -25,9 +25,9 @@ public class BulletController : MonoBehaviour
         if(other.GetComponent<Target>() != null)
             other.GetComponent<Target>().health -= damage;
             
-
+        // Create collision particles
         Vector3 collision_pos = other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position);
-        Instantiate(spark, collision_pos, Quaternion.LookRotation(player.transform.position));
+        Instantiate(spark, collision_pos, Quaternion.identity);
 
         Destroy(gameObject);
     }
