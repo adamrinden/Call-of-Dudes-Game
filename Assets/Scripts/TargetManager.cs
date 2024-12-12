@@ -42,7 +42,7 @@ public class TargetManager : MonoBehaviour
     Vector3 spawnPosition = new Vector3(x, y, z);
 
     // Instantiate the target with the prefab's rotation
-    GameObject newTarget = Instantiate(targetPrefab, spawnPosition, targetPrefab.transform.rotation);
+    GameObject newTarget = Instantiate(targetPrefab, spawnPosition, Quaternion.Euler(90.0f,0.0f,Random.Range(0,360)));
     activeTargets.Add(newTarget);
 
     // Remove destroyed targets from the list
