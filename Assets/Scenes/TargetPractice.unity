@@ -1920,7 +1920,7 @@ MonoBehaviour:
   targetPrefab: {fileID: 1296261439}
   maxTargets: 6
   spawnAreaMin: {x: -5, y: 5, z: 6}
-  spawnAreaMax: {x: 20, y: 8, z: 20}
+  spawnAreaMax: {x: 10, y: 8, z: 10}
 --- !u!4 &696246635
 Transform:
   m_ObjectHideFlags: 0
