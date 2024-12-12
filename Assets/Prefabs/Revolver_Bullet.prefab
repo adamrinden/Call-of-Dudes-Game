@@ -49,6 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   lifeTime: 3
+  spark: {fileID: 8509528919057423291, guid: d0a476cc283de451c8fd0b5e2685610a, type: 3}
+  player: {fileID: 8875285055434659839, guid: ee61f76af5ddaa34db34a49e9d955317, type: 3}
 --- !u!135 &6308964769337309352
 SphereCollider:
   m_ObjectHideFlags: 0
