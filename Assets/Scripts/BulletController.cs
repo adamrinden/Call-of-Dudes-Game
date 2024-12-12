@@ -16,6 +16,8 @@ public class BulletController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
+        if(other.tag == "Player")
+           return;
         if(other.GetComponent<Target>() != null)
             other.GetComponent<Target>().health -= damage;
             
