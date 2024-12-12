@@ -16,6 +16,9 @@ public class Shooting : MonoBehaviour
 
     private float timer;
 
+    public AudioSource source;
+    public AudioClip clip;
+
     private void Update() {
         if(timer > 0 ) {
             timer -= Time.deltaTime;
@@ -44,6 +47,7 @@ public class Shooting : MonoBehaviour
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawnTransform.forward * bulletSpeed, ForceMode.Impulse);
         bullet.GetComponent<BulletController>().damage = bulletDamage;
 
+        source.PlayOneShot(clip);
         timer = fireRate;
     }
 }
