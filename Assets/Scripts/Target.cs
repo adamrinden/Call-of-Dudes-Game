@@ -13,6 +13,13 @@ public class Target : MonoBehaviour
     // Event to notify when the target is destroyed
     public event System.Action OnDestroyed;
 
+    public ScoreCount scoreManager; // Reference to the ScoreCount script
+
+    void OnDestroy()
+    {
+        scoreManager.AddScore(1); // Add 1 point when this object is destroyed
+    }
+
     private void Start()
     {
         initialPosition = transform.position;
