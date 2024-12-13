@@ -28784,9 +28784,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPrefab: {fileID: 1276380501}
-  maxTargets: 6
-  spawnAreaMin: {x: -6, y: 1, z: 6}
-  spawnAreaMax: {x: 6, y: 4, z: 15}
+  maxTargets: 10
+  spawnAreaMin: {x: -5, y: 1, z: 4}
+  spawnAreaMax: {x: 6, y: 4, z: 20}
 --- !u!4 &696246635
 Transform:
   m_ObjectHideFlags: 0
