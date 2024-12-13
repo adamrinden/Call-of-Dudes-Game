@@ -21,7 +21,6 @@ public class Target : MonoBehaviour
     void OnDestroy()
     {
         scoreManager.AddScore(1); // Add 1 point when this object is destroyed
-        source.PlayOneShot(clip); // Play explosion sound when target is destroyed
     }
 
     private void Start()
@@ -31,7 +30,6 @@ public class Target : MonoBehaviour
 
     private void Update()
     {
-        //source.enabled = true;
         // Movement logic
         float xMovement = Mathf.Sin(Time.time * moveSpeed) * moveRange;
         transform.position = new Vector3(initialPosition.x + xMovement, transform.position.y, transform.position.z);
@@ -39,6 +37,7 @@ public class Target : MonoBehaviour
         // Destroy logic
         if (health <= 0)
         {
+            source.PlayOneShot(clip); // Play explosion sound when target is destroyed
             OnDestroyed?.Invoke(); // Notify manager
             Destroy(gameObject);
         }
