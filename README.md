@@ -29,10 +29,8 @@
 ### Game Flow:
 
 1. **Title Screen:** Start game, Instructions, Exit options.
-2. **Instructions Screen:** Brief tutorial on controls and gameplay.
-3. **Match Setup:** Choose team and game mode
+2. **Match Setup:** Choose Play
 	* Target Practice
-	* Single-player mode (Player vs AI’s)
 4. **Gameplay Loop:** The Player controls the character to move and shoot while trying to hit targets and get the most points.
 
 ### Challenges:
