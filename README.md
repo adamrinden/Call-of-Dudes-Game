@@ -39,6 +39,9 @@
 * **Animation:** Creating fluid animations for player movements and interactions.
 
 ## In-progress Gameplay
-[![Video Title](https://img.youtube.com/vi/uDlJvCfBZpY/0.jpg)](https://www.youtube.com/watch?v=uDlJvCfBZpY)
+[![Call of Dudes Early](https://img.youtube.com/vi/uDlJvCfBZpY/0.jpg)](https://www.youtube.com/watch?v=uDlJvCfBZpY)
+
+## Final Gameplay
+[![Call of Dudes Final](https://img.youtube.com/vi/rLDfU2bzyY0/0.jpg)](https://www.youtube.com/watch?v=rLDfU2bzyY0)
 
 
