@@ -19,15 +19,17 @@ public class Shooting : MonoBehaviour
     public AudioClip clip;
 
     private void Update() {
-        if(timer > 0 ) {
+
+        if(timer > 0)
             timer -= Time.deltaTime;
-        }
+        
 
-        if(Input.GetButton("Fire1") && timer <= 0) {
-
+        if(Input.GetButton("Fire1") && timer <= 0)
             Shoot();
-        }
+        
 
+        if(this.transform.localRotation.x < 0)
+            this.transform.Rotate(1, 0, 0);
        
     }
 
@@ -36,6 +38,9 @@ public class Shooting : MonoBehaviour
         bullet.GetComponent<Rigidbody>().AddForce(bulletSpawnTransform.forward * bulletSpeed, ForceMode.Impulse);
         bullet.GetComponent<BulletController>().damage = bulletDamage;
 
+        this.transform.Rotate(-35, 0, 0);
+
+        // Play shooting sound
         source.PlayOneShot(clip);
         timer = fireRate;
     }
